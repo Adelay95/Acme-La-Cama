@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- 
+ * tiles.xml
+
+ * Copyright (C) 2016 Universidad de Sevilla
+ * 
+ * The use of this project is hereby constrained to the conditions of the 
+ * TDG Licence, a copy of which you may download from 
+ * http://www.tdg-seville.info/License.html
+ -->
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+       
+<tiles-definitions>
+	<definition name="actor/client/create" extends="master.page">	
+		<put-attribute name="title" value="Client create" />
+		<put-attribute name="body" value="/views/actor/edit.jsp" />
+	</definition>
+	
+	<definition name="actor/client/edit" extends="master.page">	
+		<put-attribute name="title" value="Client edit" />
+		<put-attribute name="body" value="/views/actor/trueEdit.jsp" />
+	</definition>
+	
+	<definition name="actor/manajer/create" extends="master.page">	
+		<put-attribute name="title" value="Create a manager" />
+		<put-attribute name="body" value="/views/actor/edit.jsp" />
+	</definition>
+	
+	<definition name="actor/manajer/edit" extends="master.page">	
+		<put-attribute name="title" value="Edit a manager" />
+		<put-attribute name="body" value="/views/actor/trueEdit.jsp" />
+	</definition>
+	
+	<definition name="actor/worker/create" extends="master.page">	
+		<put-attribute name="title" value="Create a worker" />
+		<put-attribute name="body" value="/views/actor/edit.jsp" />
+	</definition>
+	
+	<definition name="actor/worker/listWorkers" extends="master.page">	
+		<put-attribute name="title" value="Worker list" />
+		<put-attribute name="body" value="/views/actor/listClients.jsp" />
+	</definition>
+	
+	<definition name="actor/worker/edit" extends="master.page">	
+		<put-attribute name="title" value="Edit a worker" />
+		<put-attribute name="body" value="/views/actor/trueEdit.jsp" />
+	</definition>
+	
+	<definition name="actor/administrator/edit" extends="master.page">	
+		<put-attribute name="title" value="Edit the admin" />
+		<put-attribute name="body" value="/views/actor/trueEdit.jsp" />
+	</definition>
+	
+	<definition name="actor/client/list" extends="master.page">	
+		<put-attribute name="title" value="Actor list" />
+		<put-attribute name="body" value="/views/actor/listClients.jsp" />
+	</definition>
+	
+	<definition name="actor/manajer/list" extends="master.page">	
+		<put-attribute name="title" value="Manager list" />
+		<put-attribute name="body" value="/views/actor/listManagers.jsp" />
+	</definition>
+	
+</tiles-definitions>

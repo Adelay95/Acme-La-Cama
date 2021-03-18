@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- 
+ * tiles_es.xml
+
+ * Copyright (C) 2016 Universidad de Sevilla
+ * 
+ * The use of this project is hereby constrained to the conditions of the 
+ * TDG Licence, a copy of which you may download from 
+ * http://www.tdg-seville.info/License.html
+ -->
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+       
+<tiles-definitions>
+	<definition name="actor/client/create" extends="master.page">	
+		<put-attribute name="title" value="Crear un cliente" />
+		<put-attribute name="body" value="/views/actor/edit.jsp" />
+	</definition>
+	
+	<definition name="actor/client/edit" extends="master.page">	
+		<put-attribute name="title" value="Editar un cliente" />
+		<put-attribute name="body" value="/views/actor/trueEdit.jsp" />
+	</definition>
+	<definition name="actor/manager/create" extends="master.page">	
+		<put-attribute name="title" value="Crear un gerente" />
+		<put-attribute name="body" value="/views/actor/edit.jsp" />
+	</definition>
+	
+	<definition name="actor/manager/edit" extends="master.page">	
+		<put-attribute name="title" value="Editar un gerente" />
+		<put-attribute name="body" value="/views/actor/trueEdit.jsp" />
+	</definition>
+	<definition name="actor/worker/create" extends="master.page">	
+		<put-attribute name="title" value="Crear un trabajador" />
+		<put-attribute name="body" value="/views/actor/edit.jsp" />
+	</definition>
+	
+	<definition name="actor/worker/listWorkers" extends="master.page">	
+		<put-attribute name="title" value="Lista de trabajadores" />
+		<put-attribute name="body" value="/views/actor/listClients.jsp" />
+	</definition>
+	
+	<definition name="actor/worker/edit" extends="master.page">	
+		<put-attribute name="title" value="Editar un trabajador" />
+		<put-attribute name="body" value="/views/actor/trueEdit.jsp" />
+	</definition>
+	
+	<definition name="actor/administrator/edit" extends="master.page">	
+		<put-attribute name="title" value="Editar el administrador" />
+		<put-attribute name="body" value="/views/actor/trueEdit.jsp" />
+	</definition>
+	
+	<definition name="actor/client/list" extends="master.page">	
+		<put-attribute name="title" value="Lista de actores" />
+		<put-attribute name="body" value="/views/actor/listClients.jsp" />
+	</definition>
+	
+	<definition name="actor/manajer/list" extends="master.page">	
+		<put-attribute name="title" value="Lista de gerentes" />
+		<put-attribute name="body" value="/views/actor/listManagers.jsp" />
+	</definition>
+	
+</tiles-definitions>
